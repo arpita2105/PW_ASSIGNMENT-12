@@ -1,0 +1,60 @@
+/* B - Using Combinator selector */
+
+/* B - (a)  use any of the CSS combinator selectors to target all the anchor tags and change the text color to red */
+nav li a{
+    color:red;
+}
+
+/* B - (b)  T^rget only the first <h2> t^g ^nE Ah^nge the text ^nE ?^AkgrounE Aolor using the Aom?in^tor seleAto_ */
+nav > h2{
+    background-color: #aaf9e57f;
+    color:#7b0505
+}
+
+/* B - (c)  Also, seleAt the first <p> t^g ^nE Ah^nge the text Aolor to reE.*/
+div + p{
+    color:red;
+}
+
+
+/* C - Using Attribute Selector */
+
+/* C - (a) d t^rget the ^nAhor t^g with ^ttri?ute "href" ^nE Ah^nge Aolor to reE ^nE remove the text unEerline */
+a[href]{
+    color:red;
+    text-decoration: none;
+}
+
+/* C - (b) T^rget the ^nAhor t^g with the ^ttri?ute of Al^ss n^me “^Ative”, Ah^nge the text Aolor, ^nE proviEe the
+text style properties with unEerliningd*/
+a[class="active"]{
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+/* C - (c) d T^rget the ^nAhor t^g with the ^ttri?ute of the t^rget whose v^lue is “_self” ^nE Ah^nge the
+?^AkgrounE Aolor. */
+a[target="_self"]{
+    background-color: thistle;
+}
+
+
+/* D -  using the Pseudo selectors */
+
+/* D - (a) T^rget the l^st <p> t^g ^nE ^EE “...” i.e. three Eots ^fter its v^lu²*/
+p:last-child::after{
+    content: "...";
+}
+
+/* D - (b) T^rget the list of ?ullet points ^nE Ah^nge the Aolor of the ?ullet points without Ah^nging the list item's
+v^lued*/
+li::marker{
+    color:rgb(148, 227, 11);
+}
+
+/* D - (c) d Among the three <p> t^gs t^rget the 2nE <p> t^g, seleAt the first letter of the seAonE <p> t^g, ^nE
+Ah^nge the Aolor to reE Also inAre^se the font sie to 30px*/
+p:nth-child(even)::first-letter{
+    color:red;
+    font-size: 30px;
+}

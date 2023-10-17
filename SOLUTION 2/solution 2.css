@@ -1,0 +1,19 @@
+/* fs_ th_ D_sc_ndant comainator s_l_ctor to r_mov_ list styl_ typ_ aull_t points and t_xt und_rlining of th_
+M_nu list it_mse */
+nav ul li a{
+    text-decoration: none;
+}
+ 
+nav ul li{
+    list-style-type: none;
+}
+
+/* use the child combinator to display the menu list item inline */
+ul > li{
+    display: inline;
+}
+
+/* use the Adjacent sibling combinator selector to apply some margin between the menu list items.  */
+li + li{
+    margin: 13px;
+}
