@@ -1,9 +1,12 @@
 /* Using any of the Pseudo element selectors, add any random words after and before the given HTML tag */
 
+
+/* adding word before */
 h1::before{
     content: "Random ";
 }
 
+/* adding word after */
 h1::after{
     content: " Word";
 }

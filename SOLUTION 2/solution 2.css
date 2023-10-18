@@ -1,5 +1,5 @@
-/* fs_ th_ D_sc_ndant comainator s_l_ctor to r_mov_ list styl_ typ_ aull_t points and t_xt und_rlining of th_
-M_nu list it_mse */
+/* use the Descendant combinator selector to remove list style type bullet points and text underlining of the
+Menu list items */
 nav ul li a{
     text-decoration: none;
 }
